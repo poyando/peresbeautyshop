@@ -47,13 +47,19 @@
             box-shadow: 3px 3px #fafafa;
             cursor: pointer;
             margin: 35px 0;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+        button:active, button:focus {
+            background-color: #ff69b4;
+            color: white;
+            outline: none;
+            box-shadow: 0 0 5px #ff69b4;
         }
         button:active {     
             box-shadow: none;
             transform: translate(3px, 3px);     
         }
 
-        
     </style>
 </head>
 <body>
@@ -76,8 +82,28 @@
         <li>Beauty Tools and Accessories</li>
     </ol>
 
+    <section class="opening-hours">
+        <h2>Opening Hours</h2>
+        <table>
+            <tr><td>Monday - Friday:</td><td>9:00 AM - 7:00 PM</td></tr>
+            <tr><td>Saturday:</td><td>10:00 AM - 5:00 PM</td></tr>
+            <tr><td>Sunday:</td><td>Closed</td></tr>
+        </table>
+    </section>
+    
+
+    <div class="image-row">
+        <img src="skincare.jpg" alt="Skincare Products" width="200" height="200">
+        <img src="makeupessentials.jpg" alt="Makeup Essentials" width="200" height="200">
+        <img src="haircare.jpg" alt="Hair Care Solutions" width="200" height="200">
+        <img src="fragrance.jpg" alt="Fragrances" width="200" height="200">
+        <img src="beautytools.jpg" alt="Beauty Tools and Accessories" width="200" height="200">
+    </div>
+    
+    
     <footer>
         <p>&copy; OYANDO@2025 BEAUTY SHOP. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
